@@ -1,0 +1,140 @@
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff0f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffc1e3;
+  box-shadow: 0 2px 6px rgba(255, 182, 193, 0.3);
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #d63384;
+}
+
+.logo span {
+  color: #9c27b0;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul li {
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  color: #d63384;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #9c27b0;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #ffb6f3, #ffd6f8, #ffe3ec);
+  text-align: center;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #b80086;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  color: #ff4dab;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #5a5a5a;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  background: #ff4dab;
+  color: white;
+  padding: 0.9rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.5);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  background: #d63384;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background-color: #ffc1e3;
+  text-align: center;
+  padding: 1rem;
+  color: #8c1b68;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+}
+
+.socials a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    background: #ffc1e3;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .nav ul.active {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
